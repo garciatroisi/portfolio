@@ -19,7 +19,7 @@ const Archive = () => {
         <ArchiveCard
           title="The Sandbox Catlaysts"
           des="To mint assets, the sandbox used an ERC20 (SAND). When we moved to Polygon, 
-               we added a token with internal currency use to mint the assets. 
+               we added a token ERC1155 to mint the assets. 
                Catalysts determine the tier of each asset."
           listItem={["Solidity", "IPFS", "Node", "MySQL"]}
           link="https://opensea.io/collection/the-sandbox-s-catalysts"
