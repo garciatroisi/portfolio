@@ -19,11 +19,11 @@ const About = () => {
             <span className="text-textGreen">
               degree in software engineering
             </span>{" "}
-            degree in software engineering in 2012 and later completed my{" "}
+            in 2012 and later completed my{" "}
             <span className="text-textGreen">master&apos;s degree</span> in 2017.
           </p>
           <p>
-            I consider myself an Experienced Generalist Engineer, with a diverse
+            I consider myself an experienced Generalist Engineer, with a diverse
             background spanning various areas of software development. I&apos;ve been
             diving deep into{" "}
             <span className="text-textGreen">
