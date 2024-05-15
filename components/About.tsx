@@ -23,7 +23,7 @@ const About = () => {
             <span className="text-textGreen">master&apos;s degree</span> in 2017.
           </p>
           <p>
-            I consider myself an experienced Generalist Engineer, with a diverse
+            I consider myself an experienced developer, with a diverse
             background spanning various areas of software development. I&apos;ve been
             diving deep into{" "}
             <span className="text-textGreen">
