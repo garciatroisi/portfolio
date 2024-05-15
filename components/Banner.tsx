@@ -21,7 +21,7 @@ const Banner = () => {
       >
         Diego García
         <span className="text-textDark mt-2 lgl:mt-4">
-        Generalist Software Engineer
+        Full Stack Blockchain Engineer
         </span>
       </motion.h1>
       <motion.p
