@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  basePath: "/portfolio",
-  assetPrefix: "/portfolio",
+  basePath: "/web",
+  assetPrefix: "/web",
   reactStrictMode: true,
   images: {
     // unoptimized: true
