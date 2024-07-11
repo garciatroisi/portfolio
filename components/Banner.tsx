@@ -11,7 +11,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-lg font-titleFont tracking-wide text-textGreen"
       >
-        garciatroisi.
+        PFG
       </motion.h3>
       <motion.h1
         initial={{ y: 10, opacity: 0 }}
@@ -19,7 +19,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
       >
-        Diego García
+        Premier Football Growth
         <span className="text-textDark mt-2 lgl:mt-4">
         Full Stack Blockchain Engineer
         </span>

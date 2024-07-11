@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Diego Garcia</title>
-        <meta name="description" content="Portfolio next app" />
+        <title>PFG</title>
+        <meta name="description" content="PFG website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/portfolio/logo.ico" />
+        <link rel="icon" href="/web/logo.ico" />
       </Head>
       <main className="w-full h-screen font-bodyFont bg-bodyColor text-textLight  overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
         <Navbar />
