@@ -1,5 +1,5 @@
 import logo from "./images/logo.png";
-import profileImg from "./images/profile.jpg";
+import profileImg from "./images/profile.jpeg";
 import assetsImg from "./images/assetsImg.png";
 import faoImg from "./images/faoImg.png";
 
