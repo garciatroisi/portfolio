@@ -15,14 +15,9 @@ const Contact = () => {
       </p>
 
       <div>
-        <a href="mailto:garciatroisi@gmail.com">
+        <a href="mailto:premierfootballgrowth@gmail.com">
           <button className="w-40 h-14 border border-textGreen font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
             Say Hello
-          </button>
-        </a>
-        <a href="https://calendly.com/garciatroisi" target="_blank">
-          <button className="ml-4 w-40 h-14 border border-textGreen font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
-            Book Appointment
           </button>
         </a>
       </div>
