@@ -12,5 +12,12 @@
   display: none;
 }
 .active {
-  color: #FFCF00;
+  color: #ffcf00;
+}
+
+.bg-banner-background {
+  background-image: url("../public/assets/images/background2.jpg"); /* Asegúrate de ajustar el path a la ubicación de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
