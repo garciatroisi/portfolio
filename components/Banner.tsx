@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <section className="relative bg-banner-background">
+    <section id="home" className="relative bg-banner-background">
       <div className="absolute inset-0 bg-black opacity-60"></div>{" "}
       {/* Overlay oscuro */}
       <div className="relative max-w-contentContainer mx-auto py-20 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4">

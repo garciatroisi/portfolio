@@ -68,20 +68,7 @@ const Navbar = () => {
 
             <Link
               className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
-              href="#story"
-              onClick={handleScroll}
-            >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.1, delay: 0.1 }}
-              >
-                Our Story
-              </motion.li>
-            </Link>
-            <Link
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
-              href="#eussines"
+              href="#business"
               onClick={handleScroll}
             >
               <motion.li
@@ -89,7 +76,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.2 }}
               >
-                Our Bussines
+                Que hacemos?
               </motion.li>
             </Link>
             <Link
@@ -102,7 +89,20 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.3 }}
               >
-                Community
+                Comunidad
+              </motion.li>
+            </Link>
+            <Link
+              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+              href="#story"
+              onClick={handleScroll}
+            >
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.1, delay: 0.1 }}
+              >
+                Sobre PFG
               </motion.li>
             </Link>
             <Link
@@ -115,7 +115,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.4 }}
               >
-                Contact
+                Contacto
               </motion.li>
             </Link>
           </ul>

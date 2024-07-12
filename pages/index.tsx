@@ -1,6 +1,6 @@
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
-import Bussines from "@/components/Bussines";
+import Bussines from "@/components/Business";
 import Footer from "@/components/Footer";
 import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
@@ -33,10 +33,10 @@ export default function Home() {
           </motion.div>
           <div className="h-[88vh] mx-auto p-4 relative z-0">
             <Banner />
-            <Story />
             <Bussines />
             <Community />
             <Archive />
+            <Story />
             <Contact />
             <Footer />
           </div>

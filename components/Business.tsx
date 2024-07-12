@@ -1,57 +1,57 @@
 import { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import ANCAP from "./works/ANCAP";
-import Sonda from "./works/Sonda";
+import DesarrolloTalento from "./works/DesarrolloTalento";
 import UTE from "./works/UTE";
-import TheSandbox from "./works/TheSandbox";
+import Institucional from "./works/Institucional";
 
 const Bussines = () => {
-  const [workSandbox, setWorkSandbox] = useState(true);
+  const [workInstitucional, setWorkInstitucional] = useState(true);
   const [workUTE, setWorkUTE] = useState(false);
-  const [workSonda, setWorkSonda] = useState(false);
+  const [workDesarrolloTalento, setWorkDesarrolloTalento] = useState(false);
   const [workANCAP, setWorkANCAP] = useState(false);
 
-  const handleSandbox = () => {
-    setWorkSandbox(true);
+  const handleInstitucional = () => {
+    setWorkInstitucional(true);
     setWorkUTE(false);
-    setWorkSonda(false);
+    setWorkDesarrolloTalento(false);
     setWorkANCAP(false);
   };
   const handleUTE = () => {
-    setWorkSandbox(false);
+    setWorkInstitucional(false);
     setWorkUTE(true);
-    setWorkSonda(false);
+    setWorkDesarrolloTalento(false);
     setWorkANCAP(false);
   };
-  const handleSonda = () => {
-    setWorkSandbox(false);
+  const handleDesarrolloTalento = () => {
+    setWorkInstitucional(false);
     setWorkUTE(false);
-    setWorkSonda(true);
+    setWorkDesarrolloTalento(true);
     setWorkANCAP(false);
   };
   const handleANCAP = () => {
-    setWorkSandbox(false);
+    setWorkInstitucional(false);
     setWorkUTE(false);
-    setWorkSonda(false);
+    setWorkDesarrolloTalento(false);
     setWorkANCAP(true);
   };
   return (
     <section
-      id="eussines"
+      id="business"
       className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
     >
-      <SectionTitle title="Where I have Worked" titleNo="02" />
+      <SectionTitle title="Actividades en PFG" titleNo="01" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex flex-col">
           <li
-            onClick={handleSandbox}
+            onClick={handleInstitucional}
             className={`${
-              workSandbox
+              workInstitucional
                 ? "border-l-textGreen text-textGreen"
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            The Sandbox
+            Desarrollo Institucional
           </li>
           <li
             onClick={handleUTE}
@@ -61,17 +61,17 @@ const Bussines = () => {
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            UTE
+            Direcci&oacute;n t&eacute;cnica
           </li>
           <li
-            onClick={handleSonda}
+            onClick={handleDesarrolloTalento}
             className={`${
-              workSonda
+              workDesarrolloTalento
                 ? "border-l-textGreen text-textGreen"
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            Sonda
+            Desarrollo de Talento
           </li>
           <li
             onClick={handleANCAP}
@@ -81,12 +81,12 @@ const Bussines = () => {
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            ANCAP
+            Cl&iacute;nicas y Capacitaciones Espec&iacute;ficas
           </li>
         </ul>
-        {workSandbox && <TheSandbox />}
+        {workInstitucional && <Institucional />}
         {workUTE && <UTE />}
-        {workSonda && <Sonda />}
+        {workDesarrolloTalento && <DesarrolloTalento />}
         {workANCAP && <ANCAP />}
       </div>
     </section>
