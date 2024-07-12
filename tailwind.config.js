@@ -24,10 +24,10 @@ module.exports = {
         xl: "1280px",
       },
       colors: {
-        bodyColor: "#050A0F",
+        bodyColor: "#0A192F",
         textGreen: "#FFCF00",
-        textDark: "#e6f0ff",
-        textLight: "#f0f5ff",
+        textLight: "#ccd6f6",
+        textDark: "#8892b0",
         hoverColor: "rgba(100,255,218,0.1)",
       },
       fontFamily: {
