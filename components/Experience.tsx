@@ -5,7 +5,7 @@ import Sonda from "./works/Sonda";
 import UTE from "./works/UTE";
 import TheSandbox from "./works/TheSandbox";
 
-const Bussines = () => {
+const Experience = () => {
   const [workSandbox, setWorkSandbox] = useState(true);
   const [workUTE, setWorkUTE] = useState(false);
   const [workSonda, setWorkSonda] = useState(false);
@@ -37,7 +37,7 @@ const Bussines = () => {
   };
   return (
     <section
-      id="eussines"
+      id="experience"
       className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
     >
       <SectionTitle title="Where I have Worked" titleNo="02" />
@@ -93,4 +93,4 @@ const Bussines = () => {
   );
 };
 
-export default Bussines;
+export default Experience;
