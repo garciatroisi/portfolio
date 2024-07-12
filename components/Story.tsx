@@ -14,44 +14,60 @@ const Story = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-            Hey there! I am Diego Garcia, a software engineer with over 15 years
-            of experience in the field. I graduated with a bachelor&apos;s{" "}
+            Despu&#233;s de un extenso{" "}
+            <span className="text-textGreen">recorrido por el mundo</span> del
+            f&#250;tbol en pa&#237;ses como Brasil, Inglaterra, Escocia,
+            Portugal e Italia, hemos decidido regresar a Uruguay con el firme
+            prop&#243;sito de aplicar todo el{" "}
             <span className="text-textGreen">
-              degree in software engineering
+              conocimiento y la experiencia
             </span>{" "}
-            in 2012 and later completed my{" "}
-            <span className="text-textGreen">master&apos;s degree</span> in
-            2017.
+            adquirida en el desarrollo del f&#250;tbol en nuestro pa&#237;s.
           </p>
           <p>
-            I consider myself an experienced developer, with a diverse
-            background spanning various areas of software development. I&apos;ve
-            been diving deep into{" "}
+            La trayectoria como entrenadores comenz&#243; desde temprana edad,
+            inici&#225;ndonos con un equipo de ni&#241;os menores de 8 a&#241;os
+            y r&#225;pidamente ascendiendo al rol de entrenadores principales
+            del equipo de primera en un breve lapso de tres a&#241;os. Durante
+            este tiempo, logramos enviar a 14 jugadores a pruebas tanto con el
+            Chievo Verona como con el Hellas Verona,{" "}
             <span className="text-textGreen">
-              back-end, blockchain and web3 technologies
+              destac&#225;ndonos por nuestro compromiso diario y
+              metodolog&#237;a de trabajo
             </span>
-            , developing a passion for the decentralized world.
+            .
           </p>
           <p>
-            Proficient in Agile and Waterfall methodologies, I excel at leading
-            projects from conception to deployment, regardless of their scale.
-            My skill set includes a{" "}
+            Nuestro enfoque siempre ha sido ofensivo y contempor&#225;neo, lo
+            cual se reflej&#243; en el &#233;xito de nuestros equipos,
+            incluyendo ascensos y destacadas actuaciones en competencias
+            nacionales e internacionales. En Escocia dirigimos los equipos
+            sub-15 y sub-16 del Dundee United FC,{" "}
             <span className="text-textGreen">
-              wide range of programming languages and tools
-            </span>
-            , allowing me to adapt quickly to changing requirements and
-            technologies.
+              compitiendo contra los mejores clubes del mundo
+            </span>{" "}
+            y contribuyendo al desarrollo de jugadores que ahora forman parte de
+            selecciones juveniles.
           </p>
           <p>
-            Throughout my career, I&apos;ve demonstrated a keen ability to stay
-            ahead of the curve, embracing emerging technologies and delivering
-            high-quality solutions. I have a{" "}
+            Nuestra formaci&#243;n incluye{" "}
             <span className="text-textGreen">
-              knack for developing core logic for critical features and I&apos;m
-              proficient in API integrations and development
+              certificaciones AUF CONMEBOL, UEFA A, An&#225;lisis de rendimiento
             </span>
-            , scripting, and batch processing.
+            , entrenamientos especializados en diversos pa&#237;ses,
+            consolidando nuestro compromiso con la mejora continua.
           </p>
+          <p>
+            Esta es solo una breve mirada a nuestra trayectoria, marcada por
+            a&#241;os de dedicaci&#243;n, &#233;xito y la pasi&#243;n constante
+            por el f&#250;tbol.{" "}
+            <span className="text-textGreen">
+              Estamos emocionados de traer esta experiencia y dedicaci&#243;n al
+              desarrollo del f&#250;tbol Uruguayo
+            </span>
+            .
+          </p>
+
           <p className="text-textLight mt-6">
             Here are a list of soft skills I have gained through my experience:
           </p>
