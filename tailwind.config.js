@@ -28,6 +28,10 @@ module.exports = {
         textGreen: "#FFCF00",
         textDark: "#e6f0ff",
         textLight: "#f0f5ff",
+        obscureColor: "#1a1a1a",
+        darkGoldColor: "#7F6C00",
+        darkBlueColor: "#202040",
+        darkGreenColor: "#1a3d1a",
         hoverColor: "rgba(100,255,218,0.1)",
       },
       fontFamily: {

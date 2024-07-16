@@ -18,7 +18,7 @@ const Banner = () => {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="text-base md:max-w-[650px] text-textDark font-medium"
+          className="text-base md:max-w-[650px] text-textDark font-medium bg-black bg-opacity-50 rounded p-2"
         >
           Premier Football Growth Group es una empresa emergente en el sector
           del f&#250;tbol, dedicada a impulsar el crecimiento y desarrollo tanto

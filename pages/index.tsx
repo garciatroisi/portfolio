@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
 import Community from "@/components/Community";
+import Project from "@/components/Project";
 import Story from "@/components/Story";
 import RightSide from "@/components/RightSide";
 import Head from "next/head";
@@ -34,6 +35,7 @@ export default function Home() {
           <div className="h-[88vh] mx-auto p-4 relative z-0">
             <Banner />
             <Bussines />
+            <Project />
             <Community />
             <Archive />
             <Story />
