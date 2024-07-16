@@ -1,4 +1,4 @@
-import { assetsImg, faoImg } from "@/public/assets";
+import { inicial, avanzado, desarrollado, primera } from "@/public/assets";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import { RxOpenInNewWindow } from "react-icons/rx";
@@ -38,9 +38,9 @@ const Community = () => {
           <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
               <Image
-                className="w-full h-full object-contain"
-                src={assetsImg}
-                alt="assetsImg"
+                className="w-full h-full object-contain opacity-70"
+                src={inicial}
+                alt="inicial"
               />
               <div className="absolute w-full h-full bg-textGreen/5 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
@@ -80,9 +80,9 @@ const Community = () => {
           <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
               <Image
-                className="w-full h-full object-contain"
-                src={assetsImg}
-                alt="assetsImg"
+                className="w-full h-full object-contain opacity-70"
+                src={avanzado}
+                alt="avanzado"
               />
               <div className="absolute w-full h-full bg-textGreen/5 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
@@ -126,9 +126,9 @@ const Community = () => {
           <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
               <Image
-                className="w-full h-full object-contain"
-                src={assetsImg}
-                alt="assetsImg"
+                className="w-full h-full object-contain opacity-70"
+                src={desarrollado}
+                alt="desarrollado"
               />
               <div className="absolute w-full h-full bg-textGreen/5 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
@@ -175,9 +175,9 @@ const Community = () => {
           <div className="w-full xl:w-1/2 h-auto relative group">
             <div>
               <Image
-                className="w-full h-full object-contain"
-                src={assetsImg}
-                alt="assetsImg"
+                className="w-full h-full object-contain opacity-70"
+                src={primera}
+                alt="primera"
               />
               <div className="absolute w-full h-full bg-textGreen/5 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
