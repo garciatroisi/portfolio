@@ -1,5 +1,5 @@
-import React from 'react';
-import { AiFillThunderbolt } from 'react-icons/ai';
+import React from "react";
+import { AiFillThunderbolt } from "react-icons/ai";
 
 const HardSkillsList = () => {
   return (
@@ -8,13 +8,13 @@ const HardSkillsList = () => {
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        JavaScript | TypeScript
+        JavaScript | TypeScript | Rust
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        Node.js
+        NestJS | Express.js
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
@@ -26,13 +26,13 @@ const HardSkillsList = () => {
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        Express.js | Swagger
+        Swagger
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        REST | GraphQL | gRPC 
+        REST | GraphQL | gRPC
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
@@ -44,13 +44,19 @@ const HardSkillsList = () => {
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        Solidity
+        Solidity/Hardhat | Rust/Anchor | Move/Aptos
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        MongoDB | SqlServer | MySQL | Redis
+        Postgres | MongoDB | SqlServer | MySQL | Redis
+      </li>
+      <li className="flex items-center gap-2">
+        <span className="text-textGreen">
+          <AiFillThunderbolt />
+        </span>
+        Kafka | GraphileWorker | BullMQ
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
@@ -60,6 +66,6 @@ const HardSkillsList = () => {
       </li>
     </ul>
   );
-}
+};
 
 export default HardSkillsList;
