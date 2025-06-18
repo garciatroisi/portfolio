@@ -41,8 +41,8 @@ const SpaceDev = () => {
           </span>
           Migration of UFC Strike Moments from Flow to Aptos: 1.5 million NFTs
           to migrate. The process involved the development of a Move module,
-          enhancement of metadata, and adoption of Aptos's new Digital Asset
-          Standard.
+          enhancement of metadata, and adoption of Aptos&apos;s new Digital
+          Asset Standard.
         </li>
       </ul>
       {/* Acme project section with subtitle and simple list */}
