@@ -1,13 +1,18 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import logoSpacedev from "@/public/assets/images/logos/spacedev.jpeg";
+import logoSandbox from "@/public/assets/images/logos/sandbox.png";
+import logoUte from "@/public/assets/images/logos/ute.png";
+import logoSonda from "@/public/assets/images/logos/sonda.png";
+import logoAncap from "@/public/assets/images/logos/ancap.png";
 
-const experiences = [
-  { company: "SpaceDev", role: "Blockchain Engineer", period: "2024 - Present", logo: "/assets/images/logos/spacedev.jpeg" },
-  { company: "The Sandbox", role: "Sr Backend Engineer", period: "2022 - 2024", logo: "/assets/images/logos/sandbox.png" },
-  { company: "UTE", role: "Software Engineer", period: "2014 - 2022", logo: "/assets/images/logos/ute.png" },
-  { company: "Sonda", role: "Software Engineer", period: "2013 - 2014", logo: "/assets/images/logos/sonda.png" },
-  { company: "ANCAP", role: "IT Analyst", period: "2009 - 2013", logo: "/assets/images/logos/ancap.png" },
+const experiences: { company: string; role: string; period: string; logo: StaticImageData }[] = [
+  { company: "SpaceDev", role: "Blockchain Engineer", period: "2024 - Present", logo: logoSpacedev },
+  { company: "The Sandbox", role: "Sr Backend Engineer", period: "2022 - 2024", logo: logoSandbox },
+  { company: "UTE", role: "Software Engineer", period: "2014 - 2022", logo: logoUte },
+  { company: "Sonda", role: "Software Engineer", period: "2013 - 2014", logo: logoSonda },
+  { company: "ANCAP", role: "IT Analyst", period: "2009 - 2013", logo: logoAncap },
 ];
 
 const Banner = () => {

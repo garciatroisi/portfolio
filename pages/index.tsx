@@ -5,6 +5,7 @@ import RightSide from "@/components/RightSide";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import { useCallback, useRef } from "react";
+import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 
 const About = dynamic(() => import("@/components/About"));
@@ -25,6 +26,7 @@ const sectionReveal = {
 };
 
 export default function Home() {
+  const { basePath } = useRouter();
   const mainRef = useRef<HTMLElement>(null);
 
   const handleMouseMove = useCallback(
@@ -45,7 +47,7 @@ export default function Home() {
           name="apple-mobile-web-app-status-bar-style"
           content="black-translucent"
         />
-        <link rel="icon" href="/logo.ico" />
+        <link rel="icon" href={`${basePath}/logo.ico`} />
       </Head>
       <IntroAnimation />
       <main
