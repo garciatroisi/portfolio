@@ -8,7 +8,7 @@ const HardSkillsList = () => {
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        JavaScript | TypeScript | Rust
+        TypeScript | Rust
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
@@ -20,7 +20,7 @@ const HardSkillsList = () => {
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        Web3.js | Ethers.js
+        Viem | Ethers
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
@@ -38,13 +38,7 @@ const HardSkillsList = () => {
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        C#
-      </li>
-      <li className="flex items-center gap-2">
-        <span className="text-textGreen">
-          <AiFillThunderbolt />
-        </span>
-        Solidity/Hardhat | Rust/Anchor | Move/Aptos
+        Solidity-Hardhat or Fundry | Rust-Anchor | Move-Aptos
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
@@ -56,13 +50,19 @@ const HardSkillsList = () => {
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        Kafka | GraphileWorker | BullMQ
+        Kafka | BullMQ
       </li>
       <li className="flex items-center gap-2">
         <span className="text-textGreen">
           <AiFillThunderbolt />
         </span>
-        React | Vue
+        React Next.js
+      </li>
+      <li className="flex items-center gap-2">
+        <span className="text-textGreen">
+          <AiFillThunderbolt />
+        </span>
+        Tailwind CSS | Shadcn UI
       </li>
     </ul>
   );
