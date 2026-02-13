@@ -81,7 +81,7 @@ const Banner = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 1 }}
-          className="hidden lgl:flex flex-col items-end shrink-0 w-[280px] h-[160px] relative"
+          className="hidden lgl:flex flex-col items-end shrink-0 w-[280px] h-[170px] relative"
         >
           <AnimatePresence mode="wait">
             <motion.div
@@ -90,7 +90,7 @@ const Banner = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="absolute inset-0 flex flex-col items-end justify-center text-right"
+              className="absolute inset-0 flex flex-col items-end justify-center text-right pb-5"
             >
               <Image
                 src={experiences[current].logo}
