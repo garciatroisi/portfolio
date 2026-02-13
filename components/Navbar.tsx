@@ -1,8 +1,8 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import logo from "@/public/assets/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/router";
 import { TbBrandGithub } from "react-icons/tb";
 import { SlSocialYoutube } from "react-icons/sl";
 import {
@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 const HASH_RE = /.*#/;
 
 const Navbar = () => {
+  const { basePath } = useRouter();
   const ref = useRef<string | any>("");
   const [show, setShow] = useState(false);
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -127,7 +128,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
           </ul>
-          <a href="/assets/garciatroisi_resume.pdf" target="_blank">
+          <a href={`${basePath}/assets/garciatroisi_resume.pdf`} target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -236,7 +237,7 @@ const Navbar = () => {
                     </motion.li>
                   </Link>
                 </ul>
-                <a href="/assets/garciatroisi_resume.pdf" target="_blank">
+                <a href={`${basePath}/assets/garciatroisi_resume.pdf`} target="_blank">
                   <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
