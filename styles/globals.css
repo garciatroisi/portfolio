@@ -14,3 +14,28 @@
 .active {
   color: #FFCF00;
 }
+
+/* Spotlight cursor glow */
+.spotlight-container {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+.spotlight-container::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 207, 0, 0.05),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.spotlight-container:hover::before {
+  opacity: 1;
+}

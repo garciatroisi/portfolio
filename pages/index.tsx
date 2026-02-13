@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import RightSide from "@/components/RightSide";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import { useCallback, useRef } from "react";
 import dynamic from "next/dynamic";
 
 const About = dynamic(() => import("@/components/About"));
@@ -13,7 +14,24 @@ const Archive = dynamic(() => import("@/components/Archive"));
 const Contact = dynamic(() => import("@/components/Contact"));
 const Footer = dynamic(() => import("@/components/Footer"));
 
+const sectionReveal = {
+  initial: { opacity: 0, y: 50 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: "-80px" },
+  transition: { duration: 0.7, ease: "easeOut" },
+};
+
 export default function Home() {
+  const mainRef = useRef<HTMLElement>(null);
+
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent<HTMLElement>) => {
+      mainRef.current?.style.setProperty("--mouse-x", `${e.clientX}px`);
+      mainRef.current?.style.setProperty("--mouse-y", `${e.clientY}px`);
+    },
+    []
+  );
+
   return (
     <>
       <Head>
@@ -22,7 +40,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.ico" />
       </Head>
-      <main className="w-full h-screen font-bodyFont bg-bodyColor text-textLight  overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
+      <main
+        ref={mainRef}
+        onMouseMove={handleMouseMove}
+        className="spotlight-container w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60"
+      >
         <Navbar />
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <motion.div
@@ -35,11 +57,21 @@ export default function Home() {
           </motion.div>
           <div className="h-[88vh] mx-auto p-4">
             <Banner />
-            <About />
-            <Experience />
-            <Projects />
-            <Archive />
-            <Contact />
+            <motion.div {...sectionReveal}>
+              <About />
+            </motion.div>
+            <motion.div {...sectionReveal}>
+              <Experience />
+            </motion.div>
+            <motion.div {...sectionReveal}>
+              <Projects />
+            </motion.div>
+            <motion.div {...sectionReveal}>
+              <Archive />
+            </motion.div>
+            <motion.div {...sectionReveal}>
+              <Contact />
+            </motion.div>
             <Footer />
           </div>
           <motion.div
