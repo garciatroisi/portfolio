@@ -41,6 +41,10 @@ export default function Home() {
         <title>Diego Garcia</title>
         <meta name="description" content="Portfolio next app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
         <link rel="icon" href="/logo.ico" />
       </Head>
       <IntroAnimation />
