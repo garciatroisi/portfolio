@@ -21,7 +21,7 @@ const Banner = () => {
       >
         Diego García
         <span className="text-textDark mt-2 lgl:mt-4">
-        Full Stack Blockchain Engineer
+        Blockchain Engineer
         </span>
       </motion.h1>
       <motion.p
@@ -30,10 +30,8 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        15+ years of experience in software solutions.
-        I have a strong foundation in back-end development, specializing in blockchain and Web3. But I&apos;m also making front-ends too.
-        Strategic decision-maker, problem-solving and analytical mindset. 
-        I thrive in dynamic environments, adapting quickly to change while continuously expanding my skill set.  {" "}
+        15+ years of experience in software solutions, specializing in on-chain coding, web3 integrations, and generic API development.
+        Strategic decision-maker with a problem-solving and analytical mindset, thriving in dynamic environments while continuously expanding my skill set.{" "}
         <a href="https://www.linkedin.com/in/garciatroisi/" target="_blank">
           {" "}
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">

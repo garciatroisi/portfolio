@@ -1,4 +1,4 @@
-import { profileImg } from "@/public/assets";
+import profileImg from "@/public/assets/images/profile.jpg";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import HardSkillsList from "./HardSkillsList";
@@ -14,8 +14,10 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-            Hey there! I am Diego Garcia, a software engineer with over 15 years
-            of experience in the field. I graduated with a bachelor&apos;s {" "}
+            Hey there! I am Diego Garcia, an experienced{" "}
+            <span className="text-textGreen">Blockchain Engineer</span> with a
+            solid background spanning over 15 years in software development. I
+            graduated with a bachelor&apos;s{" "}
             <span className="text-textGreen">
               degree in software engineering
             </span>{" "}
@@ -23,33 +25,32 @@ const About = () => {
             <span className="text-textGreen">master&apos;s degree</span> in 2017.
           </p>
           <p>
-            I consider myself an experienced developer, with a diverse
-            background spanning various areas of software development. I&apos;ve been
-            diving deep into{" "}
+            My expertise lies in{" "}
             <span className="text-textGreen">
-              back-end, blockchain and web3 technologies
+              on-chain coding, web3 integrations, generic API development
             </span>
-            , developing a passion for the decentralized world.
+            , scripting, batch processing, and experience with various frontend
+            frameworks. I&apos;ve been diving deep into the decentralized world,
+            developing a passion for blockchain technologies across multiple
+            chains.
           </p>
           <p>
             Proficient in Agile and Waterfall methodologies, I excel at leading
             projects from conception to deployment, regardless of their scale.
-            My skill set includes a{" "}
+            I have a{" "}
             <span className="text-textGreen">
-              wide range of programming languages and tools
-            </span>
-            , allowing me to adapt quickly to changing requirements and
-            technologies.
+              knack for developing core logic for critical features
+            </span>{" "}
+            and I&apos;m proficient in API integrations and development.
           </p>
           <p>
-            Throughout my career, I&apos;ve demonstrated a keen ability to stay ahead
-            of the curve, embracing emerging technologies and delivering
-            high-quality solutions. I have a{" "}
+            Throughout my career, I&apos;ve worked on{" "}
             <span className="text-textGreen">
-              knack for developing core logic for critical features and I&apos;m
-              proficient in API integrations and development
+              remote projects across various time zones
             </span>
-            , scripting, and batch processing.
+            , collaborating effectively with distributed teams worldwide while
+            continuously embracing emerging technologies and delivering
+            high-quality solutions.
           </p>
           <p className="text-textLight mt-6">
             Here are a list of soft skills I have gained through my experience:
@@ -67,7 +68,7 @@ const About = () => {
                 className="rounded-lg h-full object-cover"
                 src={profileImg}
                 alt="profileImg"
-                
+
               />
               <div className="hidden lgl:inline-block absolute w-full h-80 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>

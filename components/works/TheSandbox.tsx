@@ -25,24 +25,11 @@ const TheSandbox = () => {
           and worked on the blockchain team developing smart contracts integrations, achieving key advancements.
         </li>
         <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">  
+          <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Used Node, JS, TS, IPFS, OZD, TheGraph, Solidity, Hardhat, Web3, Ethers, MetaMask, Tenderly, Alchemy, Infura,
+          Used IPFS, OZD, TheGraph, Solidity, Hardhat, Web3, Ethers, MetaMask, Tenderly, Alchemy, Infura,
           and active engagement with the EVM ecosystem, among other technologies
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          Write modern, performant, maintainable code (top-notch)
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          Engage in daily communication with multi-disciplinary teams of engineers, designers, producers,
-          spanning across remote locations worldwide.
         </li>
       </ul>
     </motion.div>

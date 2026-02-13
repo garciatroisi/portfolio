@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { logo } from "@/public/assets";
+import logo from "@/public/assets/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -11,6 +11,8 @@ import {
 import { MdOutlineClose } from "react-icons/md";
 import { motion } from "framer-motion";
 
+const HASH_RE = /.*#/;
+
 const Navbar = () => {
   const ref = useRef<string | any>("");
   const [show, setShow] = useState(false);
@@ -18,7 +20,7 @@ const Navbar = () => {
     e.preventDefault();
     setShow(false);
     const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
+    const targetId = href.replace(HASH_RE, "");
     const elem = document.getElementById(targetId);
     elem?.scrollIntoView({
       behavior: "smooth",
