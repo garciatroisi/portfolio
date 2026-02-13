@@ -10,7 +10,7 @@ interface Particle {
 
 const PARTICLE_COUNT = 70;
 const CONNECTION_DISTANCE = 140;
-const FADE_START = 2800;
+const FADE_START = 3200;
 const FADE_DURATION = 900;
 
 const IntroAnimation = () => {
@@ -119,7 +119,7 @@ const IntroAnimation = () => {
       <canvas ref={canvasRef} className="absolute inset-0" />
       <div className="relative z-10 flex flex-col items-center justify-center h-full">
         <p className="text-textGreen font-titleFont tracking-[0.3em] text-xs mb-4 uppercase intro-fade-in">
-          Welcome
+          15+ years building software
         </p>
         <h1 className="text-4xl lgl:text-6xl font-titleFont font-semibold text-textLight intro-fade-in intro-delay-1">
           Diego García
@@ -127,6 +127,9 @@ const IntroAnimation = () => {
         <div className="w-16 h-[1px] bg-textGreen mt-4 mb-3 intro-scale-in intro-delay-2" />
         <p className="text-textDark font-titleFont text-sm tracking-widest intro-fade-in intro-delay-3">
           Blockchain Engineer
+        </p>
+        <p className="text-textDark/60 font-titleFont text-xs tracking-wide mt-3 intro-fade-in intro-delay-3">
+          on-chain coding &middot; web3 integrations &middot; API development
         </p>
       </div>
     </div>
