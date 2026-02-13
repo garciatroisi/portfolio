@@ -13,6 +13,9 @@ const Projects = dynamic(() => import("@/components/Projects"));
 const Archive = dynamic(() => import("@/components/Archive"));
 const Contact = dynamic(() => import("@/components/Contact"));
 const Footer = dynamic(() => import("@/components/Footer"));
+const IntroAnimation = dynamic(() => import("@/components/IntroAnimation"), {
+  ssr: false,
+});
 
 const sectionReveal = {
   initial: { opacity: 0, y: 50 },
@@ -40,6 +43,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.ico" />
       </Head>
+      <IntroAnimation />
       <main
         ref={mainRef}
         onMouseMove={handleMouseMove}
