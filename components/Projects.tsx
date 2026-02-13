@@ -1,4 +1,4 @@
-import assetsImg from "@/public/assets/images/assetsImg.png";
+import tsbImg from "@/public/assets/images/tsb.jpg";
 import faoImg from "@/public/assets/images/faoImg.png";
 import fightidImg from "@/public/assets/images/fightid.jpg";
 import swaps from "@/public/assets/images/swaps.png";
@@ -100,8 +100,8 @@ const Projects = () => {
             <div>
               <Image
                 className="w-full h-full object-contain"
-                src={assetsImg}
-                alt="assetsImg"
+                src={tsbImg}
+                alt="tsbImg"
               />
               <div className="absolute w-full h-full bg-textGreen/5 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
