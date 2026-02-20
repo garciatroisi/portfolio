@@ -19,10 +19,10 @@ const IntroAnimation = dynamic(() => import("@/components/IntroAnimation"), {
 });
 
 const sectionReveal = {
-  initial: { opacity: 0, y: 50 },
+  initial: { opacity: 0, y: 10 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, margin: "-80px" },
-  transition: { duration: 0.7, ease: "easeOut" },
+  viewport: { once: true, amount: 0.1 },
+  transition: { duration: 0.4, ease: "easeOut" },
 };
 
 export default function Home() {

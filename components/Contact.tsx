@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="max-w-contentContainer mx-auto py-10 xl:py-32 flex flex-col gap-4 items-center justify-center"
+      className="max-w-contentContainer mx-auto min-h-screen flex flex-col gap-4 items-center justify-center"
     >
       <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">
         04. What’s Next?
@@ -14,14 +14,14 @@ const Contact = () => {
         you have any questions or simply want to connect.
       </p>
 
-      <div>
+      <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
         <a href="mailto:garciatroisi@gmail.com">
           <button className="w-40 h-14 border border-textGreen font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
             Say Hello
           </button>
         </a>
         <a href="https://calendly.com/garciatroisi" target="_blank">
-          <button className="ml-4 w-40 h-14 border border-textGreen font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
+          <button className="w-40 h-14 border border-textGreen font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
             Book Appointment
           </button>
         </a>
